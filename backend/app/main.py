@@ -11,7 +11,6 @@ from backend.app.core.config import get_settings
 from backend.app.core.exceptions import register_exception_handlers
 from backend.app.services.lm_studio import LMStudioService
 
-
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Initialize and clean up shared application resources."""
