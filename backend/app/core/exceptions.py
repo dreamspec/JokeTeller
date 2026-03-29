@@ -8,7 +8,7 @@ from fastapi import FastAPI, HTTPException, status
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
 
-from backend.app.models.status import ErrorResponse
+from app.models.status import ErrorResponse
 
 
 class JokeTellerError(Exception):

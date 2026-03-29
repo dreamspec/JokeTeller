@@ -8,19 +8,19 @@ from typing import Any
 
 import httpx
 
-from backend.app.core.config import Settings
-from backend.app.core.exceptions import (
+from app.core.config import Settings
+from app.core.exceptions import (
     EmptyModelResponseError,
     InvalidModelError,
     LMStudioTimeoutError,
     LMStudioUnavailableError,
     UpstreamProtocolError,
 )
-from backend.app.models.chat import ChatRequest, ChatResponse
-from backend.app.models.status import LMStudioStatus
-from backend.app.services.prompt_builder import build_messages
-from backend.app.utils.response_sanitizer import StreamingResponseSanitizer, sanitize_response_text
-from backend.app.utils.sse import format_sse
+from app.models.chat import ChatRequest, ChatResponse
+from app.models.status import LMStudioStatus
+from app.services.prompt_builder import build_messages
+from app.utils.response_sanitizer import StreamingResponseSanitizer, sanitize_response_text
+from app.utils.sse import format_sse
 
 
 class LMStudioService:

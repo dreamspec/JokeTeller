@@ -4,7 +4,7 @@ from datetime import datetime, timezone
 
 from fastapi import APIRouter, Request
 
-from backend.app.models.status import HealthResponse, StatusResponse
+from app.models.status import HealthResponse, StatusResponse
 
 router = APIRouter(tags=["health"])
 

@@ -5,8 +5,8 @@ from collections.abc import AsyncIterator
 from fastapi import APIRouter, Depends, Request
 from fastapi.responses import StreamingResponse
 
-from backend.app.models.chat import ChatRequest, ChatResponse
-from backend.app.services.lm_studio import LMStudioService
+from app.models.chat import ChatRequest, ChatResponse
+from app.services.lm_studio import LMStudioService
 
 router = APIRouter(tags=["chat"])
 

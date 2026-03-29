@@ -77,7 +77,7 @@ Terminal 1, start the backend:
 ```bash
 cd /Users/yashrgx/Projects/JokeTeller
 source .venv/bin/activate
-uvicorn backend.app.main:app --reload --host 127.0.0.1 --port 8000
+uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
 ```
 
 Terminal 2, start the frontend:

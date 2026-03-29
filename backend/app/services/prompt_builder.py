@@ -1,7 +1,7 @@
 """Prompt-building helpers for the JokeTeller persona."""
 
-from backend.app.models.chat import AnswerStyle, ChatMessage, ChatRequest, JokeStyle
-from backend.app.utils.response_sanitizer import FALLBACK_RESPONSE
+from app.models.chat import AnswerStyle, ChatMessage, ChatRequest, JokeStyle
+from app.utils.response_sanitizer import FALLBACK_RESPONSE
 
 DEFAULT_SYSTEM_PROMPT = """You are JokeTeller, a warm and witty local AI buddy.
 
